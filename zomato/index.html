@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="zomato_main">
+        <div class="sub1">
+            <nav style="height: 20%;">
+                <div id="toggle-button" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav_bar">
+                    <div class="row  ">
+                        <div class="get_app col-lg-6 col-md-4 d-flex justify-content-start align-items-center"
+                            style="padding-left: 100px; font-size: 12px;"><i class="fa-regular fa-hand"></i><span>Get
+                                the App</span></div>
+                        <div class="col-lg-6 col-md-8  d-flex justify-content-center align-items-center gap-5 p-4">
+                            <div class="nav_child text-white">Investor Relations</div>
+                            <div class="nav_child text-white">Add restaurant</div>
+                            <div class="nav_child text-white">Log in</div>
+                            <div class="nav_child text-white">Sign up</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3 text-white "
+                style=" height: 400px; ">
+                <div class="zom">Zomato</div>
+                <div class="zom_des">Discover the best food & drinks in Chennai</div>
+
+                <div class=" d-flex flex-row p-2 bg-light text-dark location">
+                    <div class=" d-flex justify-content-center align-items-center p-2 ">
+                        <i class="fas fa-location-dot location_name"></i>
+                        <select class="location_name drop_down">
+                            <option value="">chennai</option>
+                            <option value="">nagercoil</option>
+                        </select>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center p-2">
+                        <div><i class="fa-solid fa-magnifying-glass location_name"></i></div>
+                        <input type="text" placeholder="Search for restaurant, cusine or a dish" class="search_dish">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row mt-5" style="margin-left: 10px; margin-right: 20px;">
+            <div class="card col-lg-3 m-lg-3 col-md-4 m-md-3 col-sm-5 m-sm-3 col-5 m-2 "
+                style="padding-left: 0; padding-right: 0;">
+                <img src="/media/dish1.avif" alt="" class="card-img position-relative">
+                <div class="card-body position-absolute bg-white w-100" style="bottom: 0;">
+                    <div class="card-title order_title">order online</div>
+                    <div class="card-text order_des">stay home and order to your doorstep</div>
+                </div>
+            </div>
+
+
+            <div class="card col-lg-3 m-lg-3 col-md-4 m-md-3 col-sm-5 m-sm-3 col-5 m-2"
+                style="padding-left: 0; padding-right: 0;">
+                <img src="/media/dish2.avif" alt="" class="card-img position-relative">
+                <div class="card-body position-absolute bg-white w-100" style="bottom: 0;">
+                    <div class="card-title order_title">Dining</div>
+                    <div class="card-text order_des">view the city's favourite venues </div>
+                </div>
+            </div>
+
+            <div class="card col-lg-3 m-lg-3 col-md-4 m-md-3 col-sm-5 m-sm-3 col-5 col-5 m-2"
+                style="padding-left: 0; padding-right: 0;">
+                <img src="/media/live.jpeg" alt="" class="card-img position-relative">
+                <div class="card-body position-absolute bg-white w-100" style="bottom: 0;">
+                    <div class="card-title order_title">Live Events</div>
+                    <div class="card-text order_des">Discover India's best events and concerts</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="" style="margin-right: 10px;">
+            <div class="fs-2" style="margin-left: 30px;">Collections</div>
+            <div class="d-flex justify-content-around gap-3 flex-wrap mt-3">
+                <p class="collection_explore">Explore curated lists of top restaurants, cafes, pubs, and bars in
+                    Chennai, based on trends</p>
+                <a href="" class="text-decoration-none text-danger">
+                    <p>All collection in chennai ></p>
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 flex-wrap align-items-center ">
+                <div class=" fe feature1  d-flex align-items-end ">
+                    <div class="inner_fe d-flex justify-content-center align-items-start gap-1 flex-column">
+                        <div>New Opened Places</div>
+                        <div>21 places ></div>
+                    </div>
+                </div>
+                <div class=" fe feature2 d-flex align-items-end">
+                    <div class="inner_fe d-flex justify-content-center align-items-start gap-1 flex-column">
+                        <div>Top Trending Sports</div>
+                        <div>34 places ></div>
+                    </div>
+                </div>
+                <div class=" fe feature3 d-flex align-items-end">
+                    <div class="inner_fe d-flex justify-content-center align-items-start gap-1 flex-column">
+                        <div>South Indian Special</div>
+                        <div>39 places ></div>
+                    </div>
+                </div>
+                <div class=" fe feature4 d-flex align-items-end">
+                    <div class="inner_fe d-flex justify-content-center align-items-start gap-1 flex-column">
+                        <div>Sea View Dining</div>
+                        <div>15 places ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------------------------------------------------- -->
+        <div class="fs-2 mb-3 mt-5" style="margin-left: 23px; padding-left: 10px;">popular localities in and around
+            chennai</div>
+        <div class="row d-flex justify-content-center" style=" padding-left: 40px; margin-right: 10px;">
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">T.Nagar</div>
+                        <div class="">384 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Nungambakkam</div>
+                        <div class="">333 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Velachery</div>
+                        <div class="">533 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Adyar</div>
+                        <div class="">230 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Anna Nagar East</div>
+                        <div class="">390 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Thuraipakkam</div>
+                        <div class="">279 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Mylapore</div>
+                        <div class="">184 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class=" d-flex justify-content-between align-items-center mt-2 p-2">
+                    <div>
+                        <div class="loc_head">Alwarpet</div>
+                        <div class="">152 places</div>
+                    </div>
+                    <div>></div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-10 m-2 bg-white d-flex justify-content-center align-items-center "
+                style="border-radius: 10px; border: 1px solid rgb(97, 95, 95);">
+                <div class="fs-5">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <section class="text-dark  d-flex justify-content-center align-items-center  text-light flex-wrap p-3 row"
+            style="margin-right: 10px;">
+            <div class="col-lg-4 col-md-4 col-sm-6   my-3  se2-img">
+                <img src="./media/phone.avif" class="img-fluid img-thumbnail mypic" alt="myphoto" style="border: none;">
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-9  d-flex flex-column   gap-md-2 gap-1  p-4 h-80">
+
+                <div class=" fs-1"> GET THE ZOMATO APP</div>
+                <div>We will send you a link, open it on your phone to download the app</div>
+                <div>
+                    <div class="d-flex p-2 gap-2 mb-3">
+                        <div>
+                            <input type="radio" style="color:red;">
+                            <label for="" name="type" class="fs-6">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio">
+                            <label for="" name="type" class="fs-6">Phone</label>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <input type="text" placeholder="Email" class="p-2 fs-5"
+                            style="border-radius: 5px; width: 300px;">
+                        <button class="btn text-white bg-danger p-1 share_btn">Share App Link</button>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div>Download app from</div>
+                    <div class="mt-2">
+                        <button style="border: none;">
+                            <img src="./media/playstore.webp" alt="" width="100"
+                                style="background: transparent; border: none;">
+                        </button>
+                        <button style="border: none;">
+                            <img src="./media/app store.webp" alt="" width="100"
+                                style="background: transparent; border: none;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fs-2 mb-3 mt-5" style="margin-left: 60px;">Explore options near me</div>
+        <div class=" p-3">
+            <div class="row    mt-3 position-relative m-5" style="margin-left: 10px;" style="height: 1500px;">
+                <div class="col-lg-11 mb-5 position-relative">
+                    <div class="position-absolute p-2 explore m-2" style="z-index: 1000; background: transparent;">popular cusines near
+                        me</div>
+                    <select name="" id="" class="w-100 position-absolute  p-4 mb-2 bg-white"
+                        style="border-radius: 10px; padding-right: 10px;">
+                        
+                    </select>
+                </div>
+
+                <div class="col-lg-11 mb-5 mt-5  position-relative ">
+                    <div class="position-absolute p-2 explore m-2" style="z-index: 1000; background: transparent;">Popular Restaurant
+                        Types Near me</div>
+                    <select name="" id="" class="w-100 position-absolute  p-4 mb-2 bg-white"
+                        style="border-radius: 10px; padding-right: 10px;">
+                        
+                    </select>
+                </div>
+
+
+                <div class="col-lg-11 mb-5 mt-5 position-relative">
+                    <div class="position-absolute p-2 explore m-2" style="z-index: 1000; background: transparent;">Top Restaurant Chains
+                    </div>
+                    <select name="" id="" class="w-100 position-absolute  p-4 mb-2 bg-white"
+                        style="border-radius: 10px; padding-right: 10px;">
+                    
+                    </select>
+                </div>
+
+                <div class="col-lg-11 mb-5 mt-5 position-relative">
+                    <div class="position-absolute p-2 explore m-2" style="z-index: 1000; background: transparent;">Cities We Deliver To
+                    </div>
+                    <select name="" id="" class="w-100 position-absolute  p-4 mb-2 bg-white"
+                        style="border-radius: 10px; padding-right: 10px;">
+                    
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="">
+            <div class="d-flex m-5 justify-content-between align-items-center flex-wrap">
+                <div class="fs-1" style="font-weight: 600;">zomoto</div>
+                <div>
+                    <select name="" id="" class="fs-5">
+                        <option value="">india</option>
+                        <option value="">uae</option>
+                    </select>
+                    <select name="" id="" class="fs-5">
+                        <option value="">English</option>
+                        <option value="">tamil</option>
+                        <option value="">malayalam</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around  pb-5">
+                <div class="about d-flex flex-column">
+                    <h6>About Zomato</h6>
+                    <a href="" class="text-decoration-none text-dark footer_name">Who We Are</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Blog</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Work With Us</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Investor Relations</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Report Fraud</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Press Kit</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Contact Us</a>
+                </div>
+
+                <div class="about d-flex flex-column">
+                    <h6>Zomaverse</h6>
+                    <a href="" class="text-decoration-none text-dark footer_name">Zomato</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Blinkit</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Feeding India</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Hyperpure</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Zomato Live</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Zomaland</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Weather Union</a>
+                </div>
+
+                <div class="about d-flex flex-column">
+                    <h6>For Restaurants</h6>
+                    <a href="" class="text-decoration-none text-dark footer_name">Partner With Us</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Apps For You</a>
+                </div>
+
+                <div class="about d-flex flex-column">
+                    <h6>Learn More</h6>
+                    <a href="" class="text-decoration-none text-dark footer_name">Privacy</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Security</a>
+                    <a href="" class="text-decoration-none text-dark footer_name">Terms</a>
+                </div>
+
+                <div class="about d-flex flex-column flex-wrap">
+                    <h6>Social links</h6>
+                    <div class="d-flex flex-wrap">
+                        <a href="" target="_blank" style="color: black; margin-right: 10px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" target="_blank" style="color: black; margin-right: 10px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" style="color: black; margin-right: 10px;">
+                            <i class="fa-solid fa-x"></i>
+                        </a>
+                        <a href="" target="_blank" style="color: black; margin-right: 10px;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="" target="_blank" style="color: black;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <img src="./media/playstore.webp" alt="" class="last_play"> <br>
+                    <img src="./media/app store.webp" alt="" class="mt-1 last_play">
+                </div>
+            </div>
+        </div>
+        <div class="m-5 p-1 foot " style="border-top: 1px solid gray;">
+            By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.
+        </div>
+    </div>
+
+
+</body>
+
+</html>

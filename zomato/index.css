@@ -1,0 +1,280 @@
+body{
+    overflow-x: hidden;
+}
+
+.zomato_main{
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+
+#toggle-button {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  #toggle-button span {
+    display:block;
+    width: 100%;
+    height: 3px;
+    background-color:white;
+    margin-top: 3px;
+  }
+
+.get_app{
+    color: white;
+}
+
+.nav_bar{
+    width: 99vw;
+}
+.nav_child{
+
+    font-weight: 600;
+}
+
+
+
+.zom{
+    font-size: 60px;
+    font-weight: 800;
+}
+.zom_des{
+    font-size: 40px;
+}
+.drop_down{
+    width: 210px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-right: 2px solid rgb(125, 123, 123);
+}
+
+.location{
+    border-radius: 15px;
+}
+.location_name{
+    font-size: 19px;
+}
+
+
+.search_dish{
+    width: 500px;
+    font-size:15px;
+    margin: 5px;
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.loc_head{
+    font-size: 20px;
+}
+
+
+/* 
+choose */
+.order_title{
+    font-weight: 600;
+    font-size:20px;
+}
+
+.order_des{
+    font-size: 15px;
+
+}
+
+
+.fe{
+    height: 300px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.inner_fe{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.feature1{
+    background-image: url("/media/new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature2{
+    background-image: url("/media/light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature3{
+    background-image: url("/media/soru.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature4{
+    background-image: url("/media/sea1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.last_play{
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.share_btn{
+
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    .nav_bar{
+        display: none;
+    }
+    #toggle-button{
+        display: block;
+    }
+    .search_dish{
+        width: 300px;
+    }
+
+    .zom{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .zom_des{
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width:620px) {
+    .search_dish{
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .zom{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .zom_des{
+        font-size: 25px;
+    }
+
+    .location_name{
+        font-size: 18px;
+    }
+
+    .order_title{
+        font-size:18px;
+    }
+    
+    .order_des{
+        font-size: 13px;
+    
+    }
+
+}
+
+@media (max-width:520px) {
+    .search_dish{
+        width: 150px;
+        font-size: 13px;
+    }
+    .zom_des{
+        font-size: 20px;
+    }
+
+    .location_name{
+        font-size: 18px;
+    }
+
+    .drop_down{
+        width: 170px;
+    }
+    .order_title{
+        font-size:15px;
+    }
+    
+    .order_des{
+        font-size: 11px;
+    
+    }
+
+}
+
+
+@media (max-width:420px) {
+    .search_dish{
+        width: 140px;
+        font-size: 13px;
+    }
+    .zom_des{
+        font-size: 17px;
+    }
+
+    .location_name{
+        font-size: 18px;
+    }
+
+    .drop_down{
+        width: 100px;
+    }
+
+    .order_title{
+        font-size: 12px;
+    }
+    
+    .order_des{
+        font-size: 10px;
+    }
+
+    .last_play{
+        width: 50px;
+    }
+
+    .footer_name{
+        font-size: 10px;
+    }
+    .mypic{
+        display: none;
+    }
+    .foot{
+        font-size: 12px;
+    }
+
+    .collection_explore{
+        font-size: 13px;
+    }
+
+    .share_btn{
+        font-size: 10px !important;
+    }
+
+}
